@@ -1,0 +1,8 @@
+There are mainly text-splitters (chunkign - techinques):
+1- Length based splitting --> Fixed length chunking
+2- Text structure based   --> Intially on paragraph-based, if not, line based, if not words-based, if not character-based chunking
+3- Document based         --> Like python code file, html based files etc
+4- Semantic based         --> can be on cos-based similiarity --> smaller the angle b/w 2 sentences, more semantically similiar yhey would be and vice versa
+
+cos0  --> similiar sentences
+cod90 --> sentences are far apart.
