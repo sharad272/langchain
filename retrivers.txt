@@ -1,0 +1,1 @@
+A Retriever is a component in LangChain that fetches relevant documents from a data source in response to a user's query. 
