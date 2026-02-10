@@ -1,7 +1,7 @@
 A Retriever is a component in LangChain that fetches relevant documents from a data source in response to a user's query. 
 
 
-There are multiple retrievers.
+There are multiple retrievers. 
 
 All retreivals are runnables. We can use retrievals in chains.
 
