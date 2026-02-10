@@ -10,4 +10,15 @@ Types of Retrievers:
 1) Wikipedia Retriever
 2) Vector Store based Retriever
 3) Archive Retriever
-4) Multi-Query Retriever
+4) Multi-Query Retriever --> When the user's query is ambigious (general-purpose query) what this does is divides the main user's query into multiple sub-queries and then seek for the response of these sub-queries to get the final response.
+
+Query --> LLm --> q1,q2,q3,q4 ------> Final Response (Top -k results)
+
+5) Maximal Marginal Retreival (MMR): MMr is an information retreival algo designed to redunce redundancy in the retrieved results while mantaining high relevance to the query.
+
+
+# Enable MMR in the retriever
+retriever = vectorstore.as_retriever(
+    search_type="mmr",                   # <-- This enables MMR
+    search_kwargs={"k": 3, "lambda_mult": 0.5}  # k = top results, lambda_mult = relevance-diversity balance
+)
